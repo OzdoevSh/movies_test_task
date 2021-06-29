@@ -1,0 +1,37 @@
+.addButton {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(49, 128, 219);
+    transition: 0.2s;
+    border: none;
+    width: 100px;
+    height: 27px;
+    font-size: 10px;
+} 
+
+.addButton:hover { 
+    background: rgb(27, 122, 231);
+    cursor: pointer
+}
+
+.addButton:active {
+    background: black;
+    box-shadow: 0 3px rgb(0, 0, 0) inset;
+}
+
+textarea{
+    width: 250px;
+    height: 100px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(49, 128, 219);
+    text-indent: 0.5em;
+}
+
+.commentFormClass{
+    padding-left: 20px;
+    padding-right: 15px;
+}
