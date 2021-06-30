@@ -79,10 +79,10 @@ function Movies() {
         {movies.map(item => {
           const movieComment = comments.filter((comment) => comment.movieId === item.id)
           return (
-            <div class="container">
-              <div className="row">
+            <div className="container">
+              <div className="row" key={item.id}>
                 <div className="column1"><img src={item.medium_cover_image} /></div>
-                <div className="column2">
+                <div className="column2"  >
                   <h2>{item.title} ({item.year})</h2>
                   <div><b>Genre:</b> {item.genres[0]}</div>
                   <div><b>Description:</b> {item.synopsis}</div>

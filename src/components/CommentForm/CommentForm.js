@@ -7,13 +7,13 @@ function CommentForm({ movieId, saveComment }) {
     const [userInput, setUserInput] = useState('')
 
     const changeInput = (event) => {
-        setUserInput(event.target.value.trim())
+        setUserInput(event.target.value)
     }
 
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (userInput) {
+        if (userInput.trim() > "") {
             saveComment({
                 movieId,
                 comment: userInput,
